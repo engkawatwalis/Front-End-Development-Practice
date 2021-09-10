@@ -1,0 +1,144 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+
+  --VeryDarkGray: hsl(0, 0%, 17%);
+  --DarkGray: hsl(0, 0%, 59%);
+
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+
+}
+#backSection{
+  z-index: 1;
+}
+
+#heading{
+  background-image: url('../images/pattern-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  height: 250px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#heading h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#heading form{
+  width: 40vw;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+#heading form input{ 
+  width: 80%;
+  height: 2.9rem;
+  font-size: 18px;
+  color: var(--DarkGray);
+  margin-right: 0rem;
+  background-color: white;
+  border: none;
+  padding: 0rem auto;
+}
+
+#heading form input:focus{
+ border: none;
+ outline: none;
+}
+
+#heading form button{
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  background-image: url('../images/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: center center;
+  margin-left: 0rem;
+  position: absolute;
+  right: 0rem;
+}
+
+#results{
+  width: 70vw;
+  min-height: 10rem;
+  margin: 3rem auto;
+  padding: 2rem 2rem;
+  position: fixed;
+  z-index: 999;
+  left: 15vw;
+  top: 10rem;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: -1px 8px 17px 4px rgba(0,0,0,0.23);
+}
+
+#results p{
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--DarkGray);
+}
+
+#results span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#map{
+  height: 500px;
+  width: 100%;
+  background-color:hsl(228, 45%, 44%);
+}
+#mapid{
+  height: 500px;
+
+}
+
+@media (max-width: 768px) {
+  #heading form{
+    width: 80vw;
+    margin: 1rem auto; 
+    font-size: 0.7rem;
+  }
+
+  #heading form input::placeholder{
+    font-size: 3vw;
+  }
+
+  #results{
+    width: 80vw;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    z-index: 999;
+    left: 10vw;
+    top: 8rem;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: -1px 8px 17px 4px rgba(0,0,0,0.23);
+    text-align: center;
+  }
+  #results .row > div{
+    margin-bottom: 1rem;
+  }
+  #results p{
+    font-size: 0.8rem;
+    margin-bottom: 0rem;
+  }
+  
+  #results span{
+    font-size: 1.2rem;
+  }
+}

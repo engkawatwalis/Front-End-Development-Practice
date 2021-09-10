@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Pricing Component app</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="heading">
+  <h1>Simple, traffic-based pricing</h1>
+  <h2>Sign-up for our 30 days trial.</h2>
+  <h2>No credit card required.</h2>
+</div>
+
+<div id="app" class="container">
+  <div class="row">
+
+    <div class="topSection row">
+      <div id="priceRangeBox">
+        <label class="pageView" for="priceRange" class="form-label">100K PAGEVIEWS</label>
+        <input type="range" class="form-range" min="1" max="5" step="1" id="priceRange">
+      </div>
+      <div id="price">
+        <span id=priceNum>$16.00</span>
+        <span>/month</span>
+      </div>
+      <div id="billing" class="custom-control custom-switch">
+        <span>Monthly Billing</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span>Yearly Billing</span>
+      </div>
+    </div>
+
+    <div class="bottomSection row">
+      <hr>
+        <p> <img src="images/icon-check.svg" alt=""> Unlimited Websites</p>
+        <p><img src="images/icon-check.svg" alt=""> 100% data ownership</p>
+        <p><img src="images/icon-check.svg" alt=""> Email Report</p>
+        <button class="btn">Start my trial</button>
+    </div>
+   
+  </div>
+</div>
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

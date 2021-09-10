@@ -1,0 +1,157 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan1: hsl(186, 14%, 43%);
+    --Darkgrayishcyan2: hsl(184, 14%, 56%);
+    --Lightgrayishcyan1: hsl(185, 41%, 84%);
+    --Lightgrayishcyan2: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    background-color: var(--Lightgrayishcyan1);
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    color: var(--Verydarkcyan);
+    margin: 2rem auto;
+}
+
+#app{
+    border-radius: 15px;
+    width: 60vw;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+#app input,
+#app label{
+    display: block;
+}
+
+#inputs{
+    color: var(--Verydarkcyan);
+}
+
+.billAmount,
+.peopleNum{
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+#inputs #selectTip .btn-change{
+    width: 28%;
+    height: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0.5rem;
+}
+
+#inputs #selectTip input:checked + label{
+    background-color: #38AC9E;
+    color: var(--Verydarkcyan);
+}
+
+
+#inputs #selectTip label:not(:first-child){
+    background-color: var(--Verydarkcyan);
+}
+
+
+#inputs .form-group{
+    margin-bottom: 1rem;
+}
+
+#inputs input{
+    border-radius: 5px;
+    background-color: var(--Lightgrayishcyan2);
+    width: 90%;
+    color: var(--Verydarkcyan);
+}
+
+#inputs #billAmount label,
+#inputs #peopleNum label{
+    display: inline-flex;
+    width: 45%;
+}
+#inputs #billAmount small,
+#inputs #peopleNum small{
+    display: none;
+    text-align: right;
+    font-size: 0.7em;
+    color: rgb(255, 145, 0);
+}
+
+
+#results{
+    background-color: var(--Verydarkcyan);
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    color: white;
+    position: relative;
+}
+
+#results h2{
+    font-size: 1rem;
+}
+
+
+#results .resultText{
+    float: left;
+}
+
+#results .largeNum{
+    font-size: 2.5rem;
+    color:hsl(185, 41%, 84%);
+    text-align: right;
+    
+}
+
+#results #reset{
+    border-radius: 5px;
+    background-color: var(--Darkgrayishcyan2);
+}
+
+#results #reset:hover{
+    background-color: var(--Lightgrayishcyan1);
+}
+
+/* FOR MOBILE DEVICE */
+
+@media (max-width: 375px) {
+
+    #app{
+        width: 100vw;
+        margin: auto auto;
+    }
+
+    #inputs input{
+        width: 100%;
+    }
+
+    #inputs #selectTip .btn-change{
+        width: 48%;
+        padding: 0.5rem auto;
+    }
+
+    #inputs #billAmount label, #inputs #peopleNum label{
+        width: 100%;
+    }
+    #results{
+        padding: 1rem 1rem;
+    }
+}

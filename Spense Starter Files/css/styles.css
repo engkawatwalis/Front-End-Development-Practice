@@ -1,0 +1,564 @@
+:root {
+    --beige: #F0EEEB;
+    --black: #000;
+  }
+
+body{
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    background-color: var(--beige);
+}
+
+  /* header */
+
+  #news{
+      background-color: black;
+      color: white;
+      font-size: 0.7em;
+      text-align: center;
+      padding: 5px;
+  }
+
+  #news span {
+      text-decoration: underline;
+  }
+
+  nav .btn{
+    min-width: 9ch;
+  }
+
+  .navbar {
+    background-color: #f0eeeb;
+  }
+  .navbar .navbar-brand {
+    color: #000000;
+    
+  }
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #000000;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #000000;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #000000;
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #000000;
+    background-color: #f0eeeb;
+    border: 0.3px solid black;
+
+  }
+  .navbar .navbar-toggler {
+    
+    color: black;
+    margin-right: 15px;
+  }
+  .navbar .navbar-toggler:hover,
+  .navbar .navbar-toggler:focus {
+    background-color: #f0eeeb;
+   
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    color: #000000;
+  }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #000000;
+  }
+  .navbar .navbar-link {
+    color: #000000;
+  }
+  .navbar .navbar-link:hover {
+    color: #000000;
+  }
+
+  .navbar-light .navbar-toggler,
+  .navbar-light .navbar-toggler:hover,
+  .navbar-light .navbar-toggler:focus{
+      border-style: hidden;
+  }
+
+  .navbar li > a{
+      font-size: 0.8em;
+  }
+/* end of header*/
+
+/* main content*/
+#home-page{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#lower-content{
+    background: #fff;
+    padding: 30px 0;
+}
+#partner{
+    width: 100vw;
+    margin: auto;
+    padding: auto;
+}
+#partner #partner-logo{
+    height: 30px;
+}
+#partner #partner-logo .partner-image{
+    background-position: center;
+    background-size: contain;
+    width: 12.5%;
+    height: auto;
+    float: left;
+}
+#mockup{
+    padding-top: 15px;
+    margin-top: 15px;
+    background: var(--beige);
+}
+
+#partner #partner-logo #Facebook{
+    background: url('../Assets/Facebook\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 80%;
+}
+
+#partner #partner-logo #Dribble{
+    background: url('../Assets/Dribbble\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 80%;
+}
+#partner #partner-logo #Youtube{
+    background: url('../Assets/Youtube\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 80%;
+}
+#partner #partner-logo #Pinterest{
+    background: url('../Assets/Pinterest\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 80%;
+}
+
+#partner #partner-logo #Twitter{
+    background: url('../Assets/Twitter\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 80%;
+}
+
+#partner #partner-logo #Reddit{
+    background: url('../Assets/Reddit\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 60%;
+}
+
+#partner #partner-logo #Google{
+    background: url('../Assets/Google\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 50%;
+}
+
+#partner #partner-logo #Slack{
+    background: url('../Assets/Slack\ Logo.png') no-repeat ;
+    background-size: contain;
+    background-position: center;
+    background-size: 80%;
+}
+
+#lower-content #mockup #mockup-text h2,
+#lower-content #showcase #showcase-text h2{
+    font-size: 3vw;
+    font-weight: 600;
+    }
+#lower-content #mockup #mockup-text p,
+#lower-content #showcase #showcase-text p{
+    font-size: 0.8em;
+        font-weight: 100;
+        }
+#lower-content #mockup #mockup-text span,
+#lower-content #showcase #showcase-text span{
+
+    text-decoration: underline;
+            } 
+
+#lower-content #showcase{
+    margin-top: 15px;
+}
+#lower-content #showcase img{
+    width: 50vw;
+}
+#showcase{
+    background: #fff;
+}
+
+#showcase {
+    position: relative;
+}
+#showcase #showcase-img{
+    background: url('../Assets/Text\ Editor.png') no-repeat ;
+    background-position: left;
+    background-size: 100%;
+    width: 50vw;
+    height: 40vw;
+    
+    
+   
+   
+  
+}
+/********** end of main content **********/
+
+/********** Footer **********/
+footer{
+    background-color: #000;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer .row{
+    position: relative;
+}
+footer h3{
+    font-size: 1.6em;
+}
+footer p, footer a{
+    color: var(--beige);
+    text-decoration: none;
+    opacity: 70%;
+}
+
+footer .row > div{
+
+    font-size: 0.6em;
+}
+
+footer .row > div a{
+    margin-bottom: 20px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 769px) {
+    #home-page{
+        height: 500px;
+    }
+    #home-page #hero-image {
+        background: url('../Assets/Hero\ Image\ \(Desktop\).png') no-repeat ;
+        background-position: right;
+        background-size: contain;
+        width: 30vw;
+        height: 400px;
+        position:absolute;
+        right: 0rem;
+        top: 80px;
+      
+    }
+    #main-text{
+        padding: 100px 0 0;
+        width: 50vw;
+        float: left;
+
+    }
+
+    #main-text h2{
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    #main-text p{
+        font-size: 1.5vw;
+        font-weight: 80;
+    }
+    #main-text p > span{
+        text-decoration: underline;
+        font-style: italic;
+        
+    }
+   #home-page .form-inline #input-email{
+        width: 20em;
+    }
+    #lower-content #mockup > .row{
+        height: 280px;
+    }
+
+    #lower-content #mockup #mockup-img{
+        background: url('../Assets/Phone\ Mockup\ \(Desktop\).png') no-repeat ;
+        background-position: right bottom;
+        background-size: contain;
+        background-size: 150%;
+        
+        
+            
+        }
+    #lower-content #mockup #mockup-text{
+        padding: 15px 0px 0px 80px;
+    }
+
+    
+#lower-content #showcase #showcase-text{
+    float: right;
+    padding: 100px 0px 0px 0px;
+}
+
+footer .row > div > #about-text{
+    padding-right: 20px;
+}
+  }
+
+  
+
+  @media (max-width: 991px){
+    #main-text h2{
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+    #main-text p{
+        font-size: 1.2vw;
+        font-weight: 80;
+    }
+    #lower-content #showcase #showcase-text p{
+    font-size: 0.6em;
+        font-weight: 100;
+        }
+    #lower-content #showcase #showcase-text h2{
+            font-size: 2vw;
+            font-weight: 600;
+            }
+    #lower-content #mockup #mockup-img{
+        background-size: 200%;
+       
+    }
+    #lower-content #showcase #showcase-img{
+        background-size: 100%;
+       
+    }
+  }
+
+
+
+
+/********** tablet devices only **********/
+@media (min-width: 426px) and (max-width: 768px) {
+    #home-page #hero-image {
+        background: url('../Assets/Hero\ Image\ \(Tablet\).png') no-repeat ;
+        padding: 0;
+        background-position: center;
+        background-size: contain;
+        width: 100vw;
+        height: 50vw; 
+    }
+
+    #main-text{
+        padding: 10vw auto;
+        width: 100vw;
+        float: left;
+
+    }
+
+    #main-text h2{
+        font-size: 7vw;
+        font-weight: 700;
+    }
+
+    #main-text p{
+        font-size: 1.5vw;
+        font-weight: 80;
+    }
+    #main-text p > span{
+        text-decoration: underline;
+        font-style: italic;
+        
+    }
+    #partner #partner-logo .partner-image{
+        width: 20%;
+    
+    }
+    #partner #partner-logo #Reddit{
+        display: none;
+      }
+      
+      #partner #partner-logo #Google{
+          display: none;
+      }
+      
+      #partner #partner-logo #Slack{
+          display: none;
+      }
+      #lower-content #mockup #mockup-img{
+        background: url('../Assets/Phone\ Mockup\ \(Tablet\).png') no-repeat ;
+        background-position: center;
+        background-size: contain;
+        background-size: 100%;
+        width: 100%;
+        height: 250px;
+            
+        }
+
+    #mockup, #showcase{
+        width: 90vw;
+    }
+    #lower-content #mockup #mockup-text,
+    #lower-content #showcase #showcase-text{
+        padding: 15px 0px 15px 80px;
+        width: 70vw
+    }
+    #lower-content #showcase-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #lower-content #showcase #showcase-text p,
+    #lower-content #mockup #mockup-text p{
+        font-size: 1em;
+        
+    }
+    #lower-content #showcase #showcase-text h2,
+    #lower-content #mockup #mockup-text h2{
+        font-size: 2em;
+    }
+    footer .row > div{
+        font-size: 0.8em;
+    }
+    footer .row > div h3{
+        font-size: 1em;
+    }
+    
+}
+
+/********** mobile devices only **********/
+@media (max-width: 425px) {
+    #home-page #hero-image {
+        background: url('../Assets/Hero\ Image\ \(Mobile\).png') no-repeat ;
+        padding: 0;
+        background-position: center;
+        background-size: contain;
+        width: 95vw;
+        height: 100vw; 
+        margin: auto;
+    }
+
+    #main-text{
+        padding: 15vw auto;
+        width: 100vw;
+        float: left;
+    
+
+    }
+
+    #main-text h2{
+        font-size: 9vw;
+        font-weight: 700;
+    }
+
+    #main-text p{
+        font-size: 3vw;
+        font-weight: 80;
+    }
+    #main-text p > span{
+        text-decoration: underline;
+        font-style: italic;
+        
+    }
+    #partner #partner-logo .partner-image{
+        width: 33.3%;
+    
+    }
+
+    #partner #partner-logo #Pinterest{
+        display: none;
+    }
+    
+    #partner #partner-logo #Twitter{
+        display: none;
+    }
+    
+    #partner #partner-logo #Reddit{
+      display: none;
+    }
+    
+    #partner #partner-logo #Google{
+        display: none;
+    }
+    
+    #partner #partner-logo #Slack{
+        display: none;
+    }
+
+    #lower-content #mockup #mockup-img{
+        background: url('../Assets/Phone\ Mockup\ \(Mobile\).png') no-repeat ;
+        background-position: center;
+        background-size: contain;
+        background-size: 100%;
+        width: 100%;
+        height: 360px;        
+    }
+
+        #lower-content #mockup #mockup-text h2,
+        #lower-content #showcase #showcase-text h2{
+            font-size: 6vw;
+            font-weight: 600;
+            }
+        #lower-content #mockup #mockup-text p,
+        #lower-content #showcase #showcase-text p{
+            font-size: 2vw;
+                font-weight: 100;
+        }
+        #lower-content #mockup #mockup-text span,
+        #lower-content #showcase #showcase-text span{
+            font-size: 3vw;
+            
+         } 
+         #lower-content #mockup #mockup-text,
+         #lower-content #showcase #showcase-text{
+            padding: 15px 0px 0px 50px;
+        }
+
+        
+            
+            #lower-content #showcase-img{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            
+        }
+        footer .row > div{
+
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        footer .row > div h3{
+            font-size: 1.1em;
+        }
+
+}
+
+/**********Extrea Large devices only **********/
+@media (min-width: 1440px) {
+    #main-text h2{
+        font-size: 57.6px;
+        font-weight: 700;
+    }
+
+    #main-text p{
+        font-size: 21.6px;
+        font-weight: 80;
+    }
+   
+}

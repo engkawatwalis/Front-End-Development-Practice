@@ -1,0 +1,50 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
+}
+
+body{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.container,
+.row{
+    background-color: rgba(0,0,0,0);
+}
+#card{
+    background-color: white;
+    width: 30vw;
+    margin: 100px auto;
+    padding: 2em;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+h1 {
+    background: -webkit-linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+#card h2{
+    font-size: 1em;
+    margin: 2em 0;
+}
+
+#card > form > div{
+    margin: 2em 0;
+}
+
+form .btn{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    font-weight: bold;
+    color: #fff;
+}
+
+form #amount{
+    width: 15ch;
+}
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<h1>SPLI</h1>
+<h1>TTER</h1>
+  <div id="app" class="container">
+    <div class="row">
+      <div id="inputs" class="col-lg-6">
+        <form>
+          <div id="billAmount" class="form-group">
+            <label for="billAmount">Bill</label><small id="wrongInput1" class="form-text">Please enter number only</small>
+            <input class="billAmount" type="billAmount" placeholder="0">
+          </div>
+          
+          <div id="selectTip" class="form-group">
+            <label for="selectTip">Select Tip %</label>
+            <input type="radio" value="0.05" class="btn-check" name="tip" id="tip5">
+            <label class="btn-change" for="tip5">5%</label>
+
+            <input type="radio" value="0.10" class="btn-check" name="tip" id="tip10">
+            <label class="btn-change" for="tip10">10%</label>
+
+            <input type="radio" value="0.15" class="btn-check" name="tip" id="tip15">
+            <label class="btn-change" for="tip15">15%</label>
+
+            <input type="radio" value="0.20" class="btn-check" name="tip" id="tip20">
+            <label class="btn-change" for="tip20">20%</label>
+
+            <input type="radio" value="0.25" class="btn-check" name="tip" id="tip25">
+            <label class="btn-change" for="tip25">25%</label>
+
+            <input type="radio" class="btn-check" name="tip" id="tipCustom" >
+            <label class="btn-change" for="tipCustom">Custom</label>
+          </div>
+
+          <div id="peopleNum" class="form-group">
+            <label for="peopleNum">Number of people</label><small id="wrongInput2" class="form-text">Please enter number only</small>
+            <input class="peopleNum" type="billAmount" placeholder="0">
+          </div>
+        </form>
+      </div>
+
+      <div id="results" class="col-lg-6 row">
+        <div id="resultText-1" class="resultText col-lg-4 col-4">
+          <h2>Tip Amount</h2>
+          <p>/ person</p>
+        </div>
+        <div id="tipAmount" class="largeNum col-lg-8 col-8">
+          
+        </div>
+        <div id="resultText-2" class="resultText col-lg-4 col-4">
+          <h2>Total</h2>
+          <p>/ person</p>
+        </div>
+        <div id="totalAmount" class="largeNum col-lg-8 col-8">
+          
+        </div>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

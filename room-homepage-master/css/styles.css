@@ -1,0 +1,307 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    
+    --DarkGray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: var(--White);
+}
+
+p{
+    font-size: 0.85em;
+    color: var(--DarkGray);
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav a:hover,
+nav a:active{
+    text-decoration: underline;
+    color: var(--White);
+}
+.navbarTop{
+    position: absolute;
+    top: 0rem;
+    left: 10%
+}
+.navbarTop .icon{
+    display: none;
+}
+
+.navbarTop #navElement{
+    display: inline-block;
+}
+
+.navbarTop > .container{
+    background: rgba(0,0,0,0);
+    padding: 50px 0;
+    color: var(--White);
+    text-decoration: none;
+}
+
+
+.nav .brandLogo{
+    font-size: 1.5em;
+}
+
+nav a:not(.brandLogo){
+    font-size: 0.8em;
+}
+
+nav a{
+    padding-right: 2em;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.slider{
+    height: 534px;
+    width: 60%;
+    background-size: cover;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 40%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+.sliderAnimationOut{
+    animation-name: fadeOut;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.sliderAnimationIn{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.slider1{
+    background-image: url('../images/desktop-image-hero-1.jpg');
+}
+
+.slider2{
+    background-image: url('../images/desktop-image-hero-2.jpg')
+}
+
+.slider3{
+    background-image: url('../images/desktop-image-hero-3.jpg');
+}
+
+.mainText{
+    width: 40%;
+    padding-top: 10%;
+    padding-left: 5em;
+    padding-right: 4.5em;
+}
+
+.mainText h1{
+    margin-bottom: 1em;
+}
+
+.mainText a{
+    letter-spacing: 0.5em;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+#secText{
+    height: 250px;
+    padding: 3em 4em;
+    width: 40%;
+    
+}
+
+#image2{
+    background-image: url('../images/image-about-dark.jpg');
+    background-size: cover;
+    height: 250px;
+    width: 30%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+#image3{
+    background-image: url('../images/image-about-light.jpg');
+    background-size: cover;
+    height: 250px;
+    width: 30%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.sliderBtn{
+    position: absolute;
+    top: 470px;
+    left: 60%;
+    background: var(--black);
+    height: 4rem;
+    width: 5.25%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center center;
+}
+
+
+#left{
+    background-image: url('../images/icon-angle-left.svg');
+
+    
+}
+#right{
+    background-image: url('../images/icon-angle-right.svg');
+    left: 65.25%;
+}
+
+.sliderBtn:hover,
+.sliderBtn:active{
+    position: absolute;
+    top: 470px;
+    left: 60%;
+    background: var(--VeryDarkGray);
+    height: 4rem;
+    width: 5.25%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center center;
+}
+
+@media (max-width: 375px) {
+
+    .navbarTop{
+        width: 100%;
+    }
+    .navbarTop #navElement{
+        display: none;
+    }
+    .navbarTop .icon{
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        
+    }
+
+    .navbarTopResponsive .brandLogo{
+        display: none;
+    }
+    .navbarTopResponsive {
+        background: var(--White);
+        position: absolute;
+        width: 100vw;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .navbarTopResponsive #navElement a{
+        float: right;
+        color:hsl(0, 0%, 0%);
+
+    }
+
+    .slider{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 97%;
+        width: 100%;
+    }
+    .slider1{
+        background-image: url('../images/mobile-image-hero-1.jpg');
+    }
+
+    .slider2{
+        background-image: url('../images/mobile-image-hero-2.jpg');
+    }
+
+    .slider3{
+        background-image: url('../images/mobile-image-hero-3.jpg');
+    }
+
+    .mainText{
+        width: 100%;
+        padding: 10% 3em;
+    }
+    
+    #secText{
+        padding: 10% 3em;
+        width: 100%;
+    }
+    
+    #image2{
+
+        height: 250px;
+        width: 100%;
+    }
+    
+    #image3{
+        height: 250px;
+        width: 100%;
+    }
+
+    .slider{
+        height: 360px;
+    }
+
+    .sliderBtn{
+        position: absolute;
+        background: var(--black);
+        height: 48px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position: center center;
+    }
+
+    .sliderBtn:hover,
+    .sliderBtn:active{
+    position: absolute;
+    top: 312px;
+    left: auto;
+    background: var(--VeryDarkGray);
+    height: 48px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center center;
+}
+
+    #right{
+        top: 312px;
+        right: 0px;
+        left: auto;
+    }
+
+    #left{
+        top: 312px;
+        right: 50px;
+        left: auto;
+    }
+}
+

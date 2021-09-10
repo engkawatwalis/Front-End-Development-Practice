@@ -1,0 +1,289 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+
+/*Primary*/
+
+    --SoftCyan: hsl(174, 77%, 80%); /*(Full Slider Bar)*/
+    --StrongCyan: hsl(174, 86%, 45%); /*(Slider Backround)*/
+    --LightGrayishRed: hsl(14, 92%, 95%); /*(Discount Background)*/
+    --LightRed: hsl(15, 100%, 70%); /*(Discount Text)*/
+    --PaleBlue: hsl(226, 100%, 87%); /*(CTA Text)*/
+    
+/*Neutral*/
+    
+    --White: hsl (0, 0%, 100%); /*(Pricing Component Background)*/
+    --VeryPaleBlue: hsl(230, 100%, 99%); /*(Main Background)*/
+    --LightGrayishBlue1: hsl(224, 65%, 95%); /*(Empty Slider Bar)*/
+    --LightGrayishBlue2: hsl(223, 50%, 87%); /*(Toggle Background)*/
+    --GrayishBlue: hsl(225, 20%, 60%); /* (Text) */
+    --DarkDesaturatedBlue: hsl(227, 35%, 25%); /*(Text & CTA Background)*/
+
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    background-image: url('../images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    background-color:var(--VeryPaleBlue);
+}
+
+#heading{
+    text-align: center;
+    margin: 2rem auto 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url('../images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center center;
+}
+#heading h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#heading h2{
+    font-size: 1rem;
+    color: var(--GrayishBlue);
+}
+
+#app{
+    width: 90vw;
+    margin: auto;
+    padding: 2rem 1rem;
+    background-color: white;
+    color: var(--GrayishBlue);
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 7px 9px 4px rgba(0,0,0,0.12); 
+    box-shadow: 2px 7px 9px 4px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+
+
+.row{
+    --bs-gutter-x: 0rem;
+}
+
+#app .topSection,
+#app .bottomSection{
+    margin: 1rem auto;    
+    text-align: center;
+    width: 90vw;
+}
+/*#app .topSection{
+    border-bottom: solid var(--GrayishBlue); 
+}*/
+
+#app .topSection > div{
+    margin-bottom: 1rem;
+}
+
+#app .topSection #priceRangeBox > label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    letter-spacing: 5px;
+    
+}
+
+#app .topSection #price > span:first-child{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+#app .topSection #billing > span{
+    font-size: 0.8rem;
+    margin: auto 1rem;
+}
+
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+  
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-box-shadow: -1px 19px 19px 5px rgba(74,186,175,0.25); 
+    box-shadow: -1px 19px 19px 5px rgba(74,186,175,0.25);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: url('../images/icon-slider.svg');
+    background-size: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: var(--StrongCyan);
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background:var(--LightGrayishBlue1);
+    border-radius: 2px;
+    
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(--SoftCyan);
+  }
+  
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: var(--LightGrayishBlue1);
+    border-radius: 2px;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: var(--SoftCyan);
+    border-radius: 2px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: var(--SoftCyan);
+  }
+  input[type=range]::-ms-fill-upper {
+    background: var(--LightGrayishBlue1);
+    border-radius: 2px;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: var(--LightGrayishBlue1);
+  }
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:var(--LightGrayishBlue2);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.7px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--StrongCyan);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--StrongCyan);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  #app .bottomSection p > img{
+      margin-right: 1rem;
+  }
+  #app .bottomSection button{
+      width: 60%;
+      border-radius: 20px;
+      background-color: var(--DarkDesaturatedBlue);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin: auto auto;
+
+
+  }
+
+  @media (min-width: 769px)  {
+    #heading{
+        background-size: 15%
+    }
+    #app{
+        width: 40vw;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+  }
+
+  @media (min-width: 376px) and (max-width: 768px) {
+    #heading{
+        background-size: 30%
+    }
+    #app{
+        width: 80vw;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  }
+
+  

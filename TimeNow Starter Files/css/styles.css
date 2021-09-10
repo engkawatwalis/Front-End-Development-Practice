@@ -1,0 +1,381 @@
+:root{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    --bgblue: #46CCDE;
+    --bgcyan: #CDF9FF;
+    --midnight: #1D1B67;
+    --green: #005661;
+    --textblue: #3B60BF;
+
+
+}
+body{
+    background-color: #fff;
+}
+/* HEADER */
+
+header{
+    background: rgba(0,0,0,0);
+}
+
+header .row{
+    position: relative;
+}
+
+nav {
+    background: transparent;
+    background-attachment: fixed;
+    background-position: auto,center;
+    position:absolute;
+    top:0;  
+  }
+
+nav,
+nav .btn {
+    font-size: 0.7rem;
+}
+nav .btn {
+    min-width: 18ch;
+    background-color: var(--midnight);
+}
+nav .navbar-brand{
+    margin-right: 3vw;
+}
+
+/* END OF HEADER*/
+
+/* MAIN CONTENT*/
+
+#main-content #main-img{
+    background-color: var(--bgblue);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#main-content #main-text{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h1{
+    font-size: 10vw;
+    font-weight: bold;
+    color: var(--midnight);
+}
+
+h2{
+    font-size: 10vw;
+    font-weight: bold;
+    color: var(--midnight);
+}
+
+#content-3 h2{
+    color: var(--green);
+}
+
+h3{
+    font-size: 4vw;
+    font-weight: bold;
+    color: var(--textblue);
+}
+
+p{
+    font-size: 4.5vw;
+    font-weight: lighter;
+    margin-right: 3vw;
+    margin-top: 2vw;
+}
+
+#main-content #main-text p a{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000;   
+}
+
+button:no(nav){
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin-bottom: 3vw;
+}
+
+#start-scheduling,
+.btn-subscribe{
+    background-color: var(--midnight);
+}
+
+#content-2 {
+    margin-top: 5vw;
+}
+
+#content-2 .row > div{
+    margin-bottom: 5vw;
+}
+
+#content-2 #people-img > img{
+    width: 11%;
+}
+
+#content-3 {
+    background-color: var(--bgcyan);
+}
+
+#content-3 .row > div{
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+}
+
+/*PRICING PAGE*/
+
+#main-pricing{
+    margin-top: 5vw;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #main-pricing #pricing-content {
+      text-align: center;
+  }
+  #main-pricing #pricing-content p{
+      margin-right: 0px;
+  }
+  #main-pricing #pricing-content .switch{
+      margin-left: 3vw;
+      margin-right: 3vw;
+  }
+
+  .price-box{
+      border-color: rgba(199, 199, 199, 0.501);
+      border-style: solid;
+      border-width: thin;
+      border-radius: 5px;
+      padding: 5vw;
+      margin: 5vw auto;
+      width: 90%;
+      transition: 100ms ease;
+  }
+
+  .price-box:hover{
+      transform: scale(1.1);
+      transition: 100ms ease;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .price-box .feature-list{
+      margin-bottom: 2vw;
+  }
+  .price-box .price{
+      font-size: 10vw;
+      font-weight: bold;
+  }
+
+  .price-box img{
+    display: inline;
+    margin-right: 1rem;
+  }
+
+  .price-box button{
+      margin-top: 5vw;
+      width: 100%;
+  }
+
+
+/* FOOTER */
+
+footer{
+    padding-top: 5vw;
+}
+footer .row > div{
+    padding-top: 5vw;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 100; 
+}
+
+footer form .form-control{
+    width: 50%;
+}
+
+
+/* FOR LARGE DISPLAY*/
+@media (min-width: 768px) {
+
+header #nav-bg{
+    background-color: var(--bgblue);
+    height: 50px;
+    position: absolute;
+    right: 0rem;
+}
+
+h1{
+    font-size: 4vw;
+}
+
+h2{
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: var(--midnight);
+}
+
+h3{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--textblue);
+}
+
+p{
+    font-size: 1.3vw;
+}
+
+#content-2 .row{
+    position: relative;
+}
+#content-2 #people-img{
+    position: absolute;
+    top: 50%;
+}
+#content-3 h2{
+    color: var(--green);
+}
+
+#main-content #main-text button{
+    font-size: 1.5vw;
+}
+
+#content-3 .row > div{
+    padding-bottom: 5vw;
+}
+.price-box{
+    border-radius: 5px;
+    padding: 2vw;
+    margin: 5vw 1vw;
+    width: 30%;
+}
+.price-box .price{
+    font-size: 3vw;
+}
+.price-box button{
+    margin-top: 1vw;
+}
+}
+
+/* FOR TABLET DISPLAY*/
+@media (min-width: 576px) and (max-width: 767px){
+    h1{
+        font-size: 4vw;
+    }
+
+    h2{
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    
+    h3{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    
+    p{
+        font-size: 2.3vw;
+    }  
+
+
+    #content-2 .row > div {
+        margin-bottom: 2vw;
+    }
+
+    .btn-group-lg>.btn, .btn-lg{
+        font-size: 2vw;
+        font-weight: bold;
+        margin-bottom: 3vw;
+    }
+    #content-2 #people-img > img{
+        width: 15%;
+    }
+    #content-3 .row > div{
+        padding-bottom: 0vw;
+    }
+
+    #main-content img{
+        vertical-align: middle;
+    }
+    #pricing-1, #pricing-2{
+        padding: 2vw;
+        margin: 5vw auto;
+        width: 45%;
+    }
+    .price-box .price{
+        font-size: 6vw;
+    }
+
+    .price-box p{
+        font-size: 1.5vw;
+    }
+    #pricing-2 button{
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 575px){
+    
+}

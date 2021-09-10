@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>IP Address Tracker</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+
+  <div id=backSection>
+  <div id="heading">
+    <h1>
+      IP Address Tracker
+    </h1>
+    <div>
+      <form class="form-inline">
+        <input type="text" placeholder="Search for any address or domain"></input>
+        <button type="submit" class="btn"></button>
+      </form>
+    </div>
+  </div>
+
+  <div id="map">
+    
+  </div>
+</div>
+
+  <div id="results" class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <p>IP ADDRESS</p>
+        <span id="ipAddress"></span>
+      </div>
+      <div class="col-lg-3">
+        <p>Location</p>
+        <span id="location"></span>
+      </div>
+      <div class="col-lg-3">
+        <p>TIMEZONE</p>
+        <span id="timeZone"></span>
+      </div>
+      <div class="col-lg-3">
+        <p>ISP</p>
+        <span id="ISP"></span>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+
+</body>
+</html>

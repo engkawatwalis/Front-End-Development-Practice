@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+    <title>Go Exchange</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <div id="card" class="col-lg-6 justify-content-center">
+
+        <h1>Go Exchange</h1>
+        <h2>Exchange money rate with just a click</h2>
+        <form>
+          <div class="form-group">
+          <label for="orginal-cur">From:</label>
+          <select name="original-cur" id="original-cur">
+            
+          </select>
+          <label for="dest-cur">to:</label>
+          <select name="dest-cur" id="dest-cur">
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="text" name="amount" id="amount">
+          <input type="submit" class="btn btn-sm" id="submitBtn">
+        </div>
+        </form>
+        <div id="exchangeAmount">
+
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
