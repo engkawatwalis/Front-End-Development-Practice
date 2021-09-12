@@ -1,0 +1,330 @@
+:root{
+
+font-size: 14px;
+/*Primary*/
+
+--DarkBlue1: hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+--DarkBlue2: hsl(218, 28%, 13%); /*(main background)*/
+--DarkBlue3: hsl(216, 53%, 9%); /*(footer background)*/
+--DarkBlue4: hsl(219, 30%, 18%); /*(testimonials background)*/
+
+/*Accent*/
+
+--Cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+--Blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+--LightRed: hsl(0, 100%, 63%); /*(error)*/
+
+/*Neutral*/
+
+--White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--DarkBlue1);
+    color: var(--White);
+}
+
+header{
+    font-family: 'Raleway', sans-serif;
+}
+nav{
+    margin-top: 1rem;
+}
+nav #brand {
+    font-size: 1rem;
+    height: 3rem;
+
+}
+
+#logo{
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 6rem;
+    height: 3rem;
+}
+
+nav #navElement{
+    font-size: 0.8rem;
+    text-align: right;
+    vertical-align: center;
+    padding-top: 0.9rem;
+
+}
+
+nav .navElement{
+    display: inline-block;
+}
+
+nav #navElement > .navElement a{
+    margin-right: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.heroContent,
+.features{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.heroContent{
+    margin: 2rem auto;
+    text-align: center;
+}
+.heroContent .heroImage{
+    background-image: url('../images/illustration-intro.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 40vw;
+}
+
+
+.heroContent h1{
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+p{
+    width: 90%;
+    margin: auto;
+}
+
+.heroContent button{
+    width: 15rem;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, hsla(176, 68%, 64%, 1) 1%, hsla(198, 60%, 50%, 1) 85%);
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+.features{
+    margin: auto;
+}
+.features > div{
+    padding: 2rem auto;
+    margin-bottom: 4rem;
+
+}
+
+.features .featureImg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    margin-bottom: 2rem;
+}
+
+.features #feature1 .featureImg{
+    background-image: url('../images/icon-access-anywhere.svg');
+}
+
+.features #feature2 .featureImg{
+    background-image: url('../images/icon-security.svg');
+}
+
+.features #feature3 .featureImg{
+    background-image: url('../images/icon-collaboration.svg');
+}
+
+.features #feature4 .featureImg{
+    background-image: url('../images/icon-any-file.svg');
+}
+
+h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.function .heroImage{
+    background-image: url('../images/illustration-stay-productive.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+.function h2, 
+.function p,
+.function a{
+    text-align: left;
+    margin-bottom: 1.5rem;
+    
+}
+
+.function h2{
+    width: 90%;
+    margin: auto;
+}
+
+.function a{
+    font-size: 0.8rem;
+    margin-left: 5%;
+    padding-bottom: 0.5rem;
+    color: var(--Cyan);
+    text-decoration: none;
+    border-bottom: 0.5px solid var(--Cyan);
+
+}
+.testim{
+    margin-top: 3rem;
+    position: relative;
+}
+.testim > div:first-child{
+    background-image: url('../images/bg-quotes.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 10%;
+    position: absolute;
+    
+}
+.testimCard{
+    text-align: left;
+    padding: 2rem 1rem;
+    background-color: var(--DarkBlue4);
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.testimCard .profile{
+    margin-top: 1rem;
+}
+.testimCard .profileImg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    display: inline-block;
+}
+.testimCard .name{
+    display: inline-block;
+    width: 70%;
+}
+
+.testimCard .name > p:first-child{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+#testimCard1 .profileImg{
+    background-image: url('../images/profile-1.jpg');
+}
+
+#testimCard2 .profileImg{
+    background-image: url('../images/profile-2.jpg');
+}
+
+#testimCard3 .profileImg{
+    background-image: url('../images/profile-3.jpg');
+}
+
+.earlyAccess{
+
+    margin: 5rem auto;
+    padding: 2rem 1rem;
+    background-color: var(--DarkBlue4);
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.earlyAccess form{
+    margin-top: 2rem;
+}
+
+.earlyAccess form > input,
+.earlyAccess form > button{
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, hsla(176, 68%, 64%, 1) 1%, hsla(198, 60%, 50%, 1) 85%);
+    border-radius: 20px;
+    border: none;
+    margin: 0 auto 1rem;
+}
+
+.earlyAccess form input{
+    background: white;
+    color: black;
+    padding-left: 2rem;
+}
+
+.earlyAccess form input:focus,
+.earlyAccess form input:active{
+    outline: none;
+}
+
+span.emailSubmit {
+    margin-bottom: 0rem;
+    color: var(--LightRed);
+    text-align: right;
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+footer .footerElement{
+    margin-bottom: 2rem;
+}
+footer p{
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    
+    .function .heroImage{
+        height: 20vw;
+    }
+
+    .function > div:nth-child(2){
+        padding-top: 5rem;
+    }
+    .testim{
+        margin: auto;
+    }
+    .testimCard{
+        width: 30%;
+        margin: 0rem 1.5%
+    }
+}
+
+
+/* animation */
+.line{
+    margin-right: 1.5rem;
+    height: 2px;
+    width: 0px;
+    background-color: var(--White);
+    transition: 0.5s ease-out;
+    
+}
+
+.navElement:hover .line{
+    width: 50%;
+}
+
+
+
+
+
