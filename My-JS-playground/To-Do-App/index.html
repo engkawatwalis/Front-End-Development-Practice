@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo-fav.png">
+    <title>Do It Soon</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <div class="app">
+        <header class="container">
+            <div class="brand-logo">
+                <h1>I'll do soon</h1>
+            </div>
+            <div class="filter-container">
+                <div class="filter-cur"></div>
+                <ul class="filter-option hidden">
+                    <li class="option" data-option="all">all</li>
+                    <li class="option" data-option="not-start">not start</li>
+                    <li class="option" data-option="on-going">on going</li>
+                    <li class="option" data-option="completed">completed</li>
+                </ul>
+            </div>   
+        </header>
+
+        <div class="tasks-container"></div>
+
+        <div class="container new-task-container">
+            <form class="new-task-form">
+                <input class="new-task-input" type="text" placeholder="what should I do next?" autofocus>
+                <button type="submit"></button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
