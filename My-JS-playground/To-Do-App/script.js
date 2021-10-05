@@ -21,17 +21,16 @@ const filterOptions = document.querySelector('.filter-option')
 class App{
     constructor(){
         this.tasks=[];
-        this._filterCurrent();
         taskForm.addEventListener('submit', this._createNewTask.bind(this));
         taskDisplay.addEventListener('click', this._displayStatusOption.bind(this));
-        filterDisplay.addEventListener('click', this._filterDisplay.bind(this));
+        this._filterDisplay();
     }
 
     // create new task on user input
     _createNewTask(e){
             e.preventDefault();
-            let taskStatus = filterDisplay.innerText;
-            if (filterDisplay.innerText === 'all') taskStatus = 'not start';
+            let taskStatus =  document.querySelector('.filter-cur').dataset.option;
+            if (taskStatus === 'all') taskStatus = 'not start';
             const newTask = new Task(taskInput.value, taskStatus);
             this.tasks.push(newTask);
             taskInput.value = ''; //clear form input value
@@ -127,28 +126,20 @@ class App{
         }
     }
 
-    _filterCurrent(selectedFilter = 'all'){
-        let curFilter = selectedFilter;
-        const filterCur = document.querySelector('.filter-cur')
-        filterCur.innerText = curFilter;
-        this._displayFilterTasks(curFilter);
-    }
     // Filter display
     _filterDisplay(e){
-        filterOptions.classList.toggle('hidden')
-        filterDisplay.classList.add('hidden')
-        
-        const eachOption = document.querySelectorAll('.option');
-        eachOption.forEach(option=>{
-            option.addEventListener('click', ()=>{
-                const selectedFilter = option.dataset.option
-                .split('-')
-                .join(' ');
-                this._filterCurrent(selectedFilter);
-                filterDisplay.classList.remove('hidden')
-                option.parentElement.classList.add('hidden');
-            })
+        filterOptions.addEventListener('click', (e)=>{
+
+            const clicked = e.target.closest('.option');
+            if (!clicked) return;
+
+            
+            Array.from(filterOptions.children).forEach(option=>option.classList.remove('filter-cur'))
+            
+            clicked.classList.toggle('filter-cur');
+            this._displayFilterTasks(clicked.dataset.option);
         })
+        
     }
     
 }
